@@ -1,0 +1,8 @@
+<div class="comment-class">
+  <div class="user">{{ comment.by }} :</div>
+  <p class="comment-value" innerHTML="{{ comment.text }}">{{ comment.text }}</p>
+  <div class="timestamp">
+    {{ comment.time * 1000 | date: "yyyy-MM-dd HH:mm" }}
+  </div>
+  <br />
+</div>

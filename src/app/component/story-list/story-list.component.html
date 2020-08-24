@@ -1,0 +1,22 @@
+<div>
+  <div class="storiesContainer">
+    <ng-container *ngFor="let story of stories; let i = index">
+      <app-story-card
+        [story]="story"
+        [index]="i + startingIndex"
+      ></app-story-card>
+    </ng-container>
+  </div>
+  <div>
+    <ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+    <button
+      [class.btn-disable]="
+        currentIndex > maxTotalRecords && storyType !== 'new'
+      "
+      *ngIf="!loading"
+      (click)="loadStories()"
+    >
+      Load more!!!
+    </button>
+  </div>
+</div>

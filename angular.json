@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "moxion"
+    }
+  },
+  "defaultProject": "moxion",
+  "cli": {
+    "analytics": "eb1a212a-e07c-4180-89bb-39e8211276c0"
+  }
 }

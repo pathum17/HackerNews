@@ -1,0 +1,62 @@
+.storyContainer {
+  background-color: rgb(235, 235, 233);
+  border-width: 1em;
+  padding: 5px;
+}
+
+.indexDiv {
+  width: 3%;
+  overflow: hidden;
+  float: left;
+  font-size: small;
+  text-align: center;
+}
+
+.dataDiv {
+  width: 97%;
+  overflow: hidden;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.score {
+  float: left;
+}
+
+.comments {
+  float: left;
+}
+
+.data {
+  font-size: x-small;
+  clear: both;
+  padding-top: 3px;
+}
+
+.separator {
+  float: left;
+  margin-left: 1ex;
+  margin-right: 1ex;
+}
+
+.boldFont {
+  font-weight: 300;
+}
+
+.titleandsite {
+  clear: right;
+}
+
+.title {
+  float: left;
+  font-size: small;
+}
+.site {
+  float: left;
+  margin-left: 1ex;
+  font-size: x-small;
+  padding-top: 3px;
+}

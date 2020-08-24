@@ -1,0 +1,54 @@
+.storyContainer {
+  background-color: rgb(233, 233, 233);
+  /* width: 60%; */
+}
+
+.indexAndTitle {
+  display: flex;
+}
+
+.title {
+  float: left;
+  width: 95%;
+  overflow: hidden;
+}
+
+.indexDiv {
+  float: left;
+  width: 20%;
+  overflow: hidden;
+  background-color: rgb(233, 233, 233);
+}
+
+.dataDiv {
+  float: left;
+  width: 98%;
+  background-color: rgb(233, 233, 233);
+}
+
+.commentThread {
+  margin-left: 1em;
+  font-family: Verdana;
+}
+
+.main-commnet {
+  margin-left: 1em;
+}
+
+.sub-commnet {
+  margin-left: 3em;
+}
+
+.story-data {
+  margin-left: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.story-title {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.score {
+  float: left;
+}

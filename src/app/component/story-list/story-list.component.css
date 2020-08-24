@@ -1,0 +1,10 @@
+.storiesContainer {
+  /* background-color: rgb(233, 233, 233); */
+  background-color: rgb(245, 245, 233);
+  font-family: Verdana;
+}
+
+.btn-disable {
+  pointer-events: none;
+  background-color: #edf1f2;
+}

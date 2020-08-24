@@ -1,0 +1,31 @@
+<div class="storyContainer">
+  <div class="indexDiv">
+    <div class="boldFont">{{ index }}.</div>
+  </div>
+  <div class="dataDiv">
+    <div class="titleandsite" (click)="openLink(story.url)" *ngIf="story?.url">
+      <p class="title" innerHTML="{{ story?.title }}"></p>
+      <p class="site" innerHTML="({{ getHostname(story.url) }})"></p>
+    </div>
+
+    <div class="data">
+      <div class="score">
+        {{ story?.score }} points by {{ story?.by }} on
+        {{ story?.time * 1000 | date: "yyyy-MM-dd HH:mm:ss" }}
+      </div>
+      <span class="separator">|</span>
+      <div
+        class="comments"
+        *ngIf="
+          story?.kids !== undefined && story?.kids.length > 0;
+          else noComments
+        "
+      >
+        <a href="#" routerLink="/story/{{ story?.id }}"
+          >{{ story?.kids.length }} comments</a
+        >
+      </div>
+    </div>
+    <ng-template #noComments>No Comments.</ng-template>
+  </div>
+</div>

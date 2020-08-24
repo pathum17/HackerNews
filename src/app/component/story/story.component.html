@@ -1,0 +1,25 @@
+<div class="storyContainer">
+  <div class="story-data">
+    <a href="{{ story?.url }}">
+      <div class="story-title">{{ story?.title }}</div></a
+    >
+
+    <div class="score">
+      {{ story?.score }} points | by {{ story?.by }} on
+      {{ story?.time * 1000 | date: "yyyy-MM-dd HH:mm:ss" }}
+    </div>
+  </div>
+
+  <div class="commentThread">
+    <ng-container *ngFor="let comment of story?.comments">
+      <div class="main-commnet">
+        <app-comment [comment]="comment"></app-comment>
+      </div>
+      <ng-container *ngFor="let commentx of comment?.subComments">
+        <div class="sub-commnet">
+          <app-comment [comment]="commentx"></app-comment>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>
